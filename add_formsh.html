@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css"  type="text/css">
+<title>Новая Покатушка</title>
+</head>
+
+<body>
+<form action="addoffer.php" method="post" name="forma">
+<fieldset>
+    <select name="type" size="1">
+        <option value="Вело">Вело</option>
+        <option value="Ролики">Ролики</option>
+        <option value="Пешая прогулка">Пешая прогулка</option>
+        <option value="Вело и Ролики">Вело и Ролики</option>
+    </select><br><br/>
+
+<label for="start_finish">Старт-финиш:</label><br/>
+<input type="text" name="start_finish" size="30"><br/><br/>
+<label for="target">Цель:</label><br/>
+<input type="text" name="target" size="30"><br/><br/>
+<label for="minimum">Дистанция от км(минимум):</label><br/>
+<input name="minimum" type="number" step="1" value="1" ><br/>
+<label for="maximum">Дистанция до км(максимум):</label><br/>
+<input type="number" step="1" value="5"  name="maximum" ><br/><br/>
+<label for="date">Дата старта:</label><br/>
+<input type="date" value="2021-10-23" name="date" ><br/><br/>
+<label for="time">Время старта:</label><br/>
+<input type="time" value="14:17:13+0000" name="time" ><br/><br/>
+<label for="tempo">Средняя скорость:</label><br/>
+    <input type="radio" name="tempo" value="Прогулка" />Прогулка <br>
+    <input type="radio" name="tempo" value="Быстрый темп" />Быстрый темп <br>
+    <input type="radio" name="tempo" value="Тренировка" />Тренировка <br><br/>
+
+<label for="comments ">Комментарии</label><br/>
+<textarea rows="10" cols="45" name="comments" type="text" value="Комментарии" ></textarea>
+</fieldset>
+<br/>
+<fieldset>
+<input id="submit" type="submit" value="Добавить покатушку"><br/>
+</fieldset>
+</form>
+Нажимая "Добавить покатушку" принимаете правила пользования сервисом и несёте полную ответственность
+<br/> за создаваемый контент в соответствии с действующими законами и нормативами.
+</body>
+</html>
